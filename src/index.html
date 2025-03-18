@@ -8,16 +8,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/logo.jpg" alt="Logo 30 anos">
             <p class="hero__text">
-                Minha festa de aniversário ocorrerá em<br> 90d 12 h 5m 36s
+                Minha festa de aniversário ocorrerá em<br> <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Fazenda Karugwa - Barão de Antonina - São Paulo/SP
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        05/09/2035 às 19hs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">Saiba mais</a>
+            </div>
         </div>
     </header>
+
+    <section class="event event--decoration01">
+        <div class="container" data-aos="zoom-in-down">
+            <div class="event__details">
+                <h2 class="event__details__title">Lorem ipsum dolor sit amet</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptate exercitationem, harum odit voluptatum modi. Porro temporibus, optio ipsa, molestias quisquam harum quaerat sunt officia sit amet voluptatum consequatur rem.
+                Cumque, est aliquam! Commodi quibusdam minima facilis est velit aliquid id laudantium blanditiis magnam quos amet vero officiis ea delectus, atque porro! Nihil corrupti a iste rem optio! Quae, accusamus.
+                <p>
+            </div>
+            <img class="event__image" src="./images/decoracao01.jpg" alt="Decoração de aniversário">
+        </div>
+    </section>
+    
+    <section class="event event--decoration02 event--image-left">
+        <div class="container" data-aos="zoom-in-up">
+            <div class="event__details">
+                <h2 class="event__details__title">Lorem ipsum dolor sit amet</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptate exercitationem, harum odit voluptatum modi. Porro temporibus, optio ipsa, molestias quisquam harum quaerat sunt officia sit amet voluptatum consequatur rem.
+                Cumque, est aliquam! Commodi quibusdam minima facilis est velit aliquid id laudantium blanditiis magnam quos amet vero officiis ea delectus, atque porro! Nihil corrupti a iste rem optio! Quae, accusamus.
+                <p>
+            </div>
+            <img class="event__image" src="./images/decoracao02.jpg" alt="Decoração de aniversário">
+        </div>
+    </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
